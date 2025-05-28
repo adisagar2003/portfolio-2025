@@ -1,0 +1,118 @@
+{
+    "name": "Aditya Sagar",
+    "contact": {
+      "phone": "437-679-4173",
+      "email": "adi.exe2003@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/aditya-sagar-42948721a/",
+      "github": "https://github.com/adisagar2003"
+    },
+    "education": [
+      {
+        "institution": "University of Prince Edward Island",
+        "location": "Charlottetown, PE",
+        "degree": "Bachelor of Science in Computer Science",
+        "duration": "Sep 2023 – May 2026"
+      }
+    ],
+    "experience": [
+      {
+        "title": "React Native Developer (Volunteer)",
+        "organization": "Yekola",
+        "location": "Remote",
+        "duration": "May 2024 – Nov. 2024",
+        "responsibilities": [
+          "Contributed to a mobile app focused on preserving and teaching African indigenous languages.",
+          "Building UI components and integrating APIs using React Native.",
+          "Collaborating with a small remote team to iterate on app design and features."
+        ]
+      },
+      {
+        "title": "React Native Developer (Volunteer)",
+        "organization": "Locality Labs",
+        "location": "Remote",
+        "duration": "May 2024 – Nov. 2024",
+        "responsibilities": [
+          "Contributed to a mobile app focused on providing plumbing services in St. John’s NL.",
+          "Building Searchbar, fixing navigation errors and integrating APIs using React Native.",
+          "Collaborating with a small remote team to iterate on app design and features."
+        ]
+      },
+      {
+        "title": "Frontend Developer (Volunteer)",
+        "organization": "Play2Help",
+        "location": "Remote",
+        "duration": "Oct. 2022 – Jan. 2023",
+        "responsibilities": [
+          "Helped develop HTML5-based mini games that generate ad revenue donated to charities.",
+          "Worked with designers and backend developers to build responsive, accessible game UIs.",
+          "Learned Agile collaboration and feedback workflows on a remote team."
+        ]
+      },
+      {
+        "title": "Food Drive Volunteer",
+        "organization": "UPEI Chaplaincy Centre",
+        "location": "Charlottetown, PEI",
+        "duration": "Sept. 2023",
+        "responsibilities": [
+          "Assisted in collecting and distributing non-perishable food items in the Sherwood community.",
+          "Supported event setup, door-to-door collection, and local food donation logistics."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Discover Charlottetown",
+        "tech_stack": [
+          "Express.ts",
+          "React.ts",
+          "TypeScript",
+          "Redux",
+          "Prisma",
+          "MapLibre",
+          "PostgreSQL",
+          "Fly.io"
+        ],
+        "duration": "Jan. 2024 – Apr. 2024",
+        "description": [
+          "Solo-built a web app highlighting events, dining, and attractions in Charlottetown, PEI.",
+          "Integrated MapLibre for interactive maps where users mark visited locations.",
+          "150+ commits; backend deployed on Fly.io with CI/CD; frontend hosted on Netlify."
+        ],
+        "links": {
+          "live_demo": "https://charlottetown.netlify.app",
+          "code": "https://github.com/adisagar2003/discover-charlottetown"
+        }
+      },
+      {
+        "name": "Real-time Social Media Platform",
+        "tech_stack": [
+          "MongoDB",
+          "Express",
+          "React",
+          "Node.js",
+          "Socket.io",
+          "Redux Toolkit",
+          "JWT"
+        ],
+        "duration": "Aug. 2023 – Dec. 2023",
+        "description": [
+          "Built a full-stack social media app with messaging, notifications, comments, and likes.",
+          "Used Socket.io for real-time features and MongoDB aggregations for performance.",
+          "Resolved backend data loss via improved query handling and async management."
+        ],
+        "links": {
+          "live_demo": "https://spectacular-faun-3e4d91.netlify.app",
+          "code": "https://github.com/adisagar2003/Vs-MERN-Social-media"
+        }
+      }
+    ],
+    "technical_skills": {
+      "languages": ["JavaScript", "TypeScript", "Python", "SQL (PostgreSQL)", "HTML/CSS", "Bash"],
+      "frameworks": ["React", "Node.js", "Express", "Redux Toolkit", "Prisma", "Socket.io", "React Native"],
+      "developer_tools": ["Git", "GitHub", "Netlify", "Fly.io", "Docker (basic)", "VS Code", "Postman"],
+      "libraries": ["MapLibre", "Mongoose", "JWT", "Cloudinary", "Axios"]
+    },
+    "summary": "Full-stack developer and Unity-certified game programmer with experience in React, Node.js, and TypeScript. Built full-stack apps with real-time features and interactive maps. Developed 2D/3D games in Unity and Unreal with AI, procedural systems, and polished gameplay. Passionate about building engaging, well-engineered apps and games that deliver real value.",
+    "heading_line":"I craft high-impact apps and immersive games—full-stack by skill, game dev by heart, driven to build experiences that feel as good as they work." 
+  }
+  
