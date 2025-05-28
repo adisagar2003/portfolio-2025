@@ -10,7 +10,7 @@ interface ProjectCardProps {
   imageUrl: string;
   projectUrl: string;
   technologies: string[];
-  duration: string;
+  year: string;
   isGameProject?: boolean;
   codeUrl?: string;
 }
@@ -21,7 +21,7 @@ export default function ProjectCard({
   imageUrl, 
   projectUrl, 
   technologies, 
-  duration,
+  year,
   isGameProject = false,
   codeUrl
 }: ProjectCardProps) {
@@ -42,7 +42,7 @@ export default function ProjectCard({
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <h2 className="text-xl font-bold text-primary">{title}</h2>
-          <span className="text-sm text-muted-foreground">{duration}</span>
+          <span className="text-sm text-muted-foreground">{year}</span>
         </div>
         
         <p className="text-muted-foreground mb-4 line-clamp-3">{description}</p>

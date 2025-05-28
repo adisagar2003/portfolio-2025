@@ -46,7 +46,16 @@ type PortfolioData = {
   };
   summary: string;
   headingLine: string;
-  project: any[];
+  project: {
+    name: string;
+    tech_stack: string[];
+    duration: string;
+    description: string[];
+    links: {
+      live_demo?: string;
+      code?: string | null;
+    };
+  }[];
   heading: string;
 };
 
@@ -302,4 +311,6 @@ export default function Home() {
       </motion.div>
     );
   }
+
+
 }

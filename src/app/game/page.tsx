@@ -1,9 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import ProjectCard from '../components/ProjectCard';
 
 interface GameProject {
@@ -87,7 +85,7 @@ const GameProjects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {gameProjects.map((project, index) => (
+          {gameProjects.map((project) => (
             <ProjectCard
               key={project.title}
               title={project.title}

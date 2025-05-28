@@ -52,7 +52,7 @@ export default function Model({ scale = 0.5 }: ModelProps) {
 
     if (neckRef.current) {
       // Convert mouse position to world space with reduced sensitivity and offset
-      let target = new Vector3(
+      const target = new Vector3(
         mousePosition.x * 10 + 0.4,  // Reduced from 5 to 2, added 0.1 offset
         -mousePosition.y * 2+ 0.1, // Reduced from 5 to 2, added 0.1 offset
         5  // Reduced from 5 to 3 for closer look

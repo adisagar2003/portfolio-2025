@@ -4,7 +4,7 @@ export interface WebProject {
   imageUrl: string;
   projectUrl: string;
   technologies: string[];
-  duration: string;
+  year: string;
   githubUrl?: string;
 }
 
@@ -15,7 +15,7 @@ export const webProjects: WebProject[] = [
     imageUrl: "/portfolio.png",
     projectUrl: "https://adisagar2003.github.io/portfolio-2025",
     technologies: ["Next.js", "React Three Fiber", "Three.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    duration: "Mar. 2024 – Present",
+    year: "2024",
     githubUrl: "https://github.com/adisagar2003/portfolio-2025"
   },
   {
@@ -24,7 +24,7 @@ export const webProjects: WebProject[] = [
     imageUrl: "/charlottetown.png",
     projectUrl: "https://charlottetown.netlify.app",
     technologies: ["Express.ts", "React.ts", "TypeScript", "Redux", "Prisma", "MapLibre", "PostgreSQL", "Fly.io"],
-    duration: "Jan. 2024 – Apr. 2024",
+    year: "2024",
     githubUrl: "https://github.com/adisagar2003/charlottetown"
   },
   {
@@ -33,7 +33,7 @@ export const webProjects: WebProject[] = [
     imageUrl: "/realtimemedia.png",
     projectUrl: "https://spectacular-faun-3e4d91.netlify.app",
     technologies: ["MongoDB", "Express", "React", "Node.js", "Socket.io", "Redux Toolkit", "JWT"],
-    duration: "Aug. 2023 – Dec. 2023",
+    year: "2023",
     githubUrl: "https://github.com/adisagar2003/social-media-app"
   }
 ]; 
