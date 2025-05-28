@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import ProjectCard from "../components/ProjectCard";
+import WebProjectCard from "../components/WebProjectCard";
 import { webProjects } from "@/data/webProjects";
 
 export default function WebProjects() {
@@ -29,7 +29,7 @@ export default function WebProjects() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {webProjects.map((project, index) => (
-            <ProjectCard
+            <WebProjectCard
               key={index}
               {...project}
             />

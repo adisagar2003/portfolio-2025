@@ -2,16 +2,16 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import ProjectCard from '../components/ProjectCard';
+import GameProjectCard from '../components/GameProjectCard';
 
 interface GameProject {
   title: string;
   description: string;
   imageUrl: string;
-  projectUrl: string;
+  projectUrl?: string;
   technologies: string[];
   year: string;
-  codeUrl?: string;
+  githubUrl: string;
 }
 
 const gameProjects: GameProject[] = [
@@ -20,7 +20,7 @@ const gameProjects: GameProject[] = [
     description: "A 3D platformer game built with Unreal Engine 5, featuring advanced movement mechanics including double jump, wall running, and dash abilities. Includes dynamic level design with collectibles and environmental hazards.",
     imageUrl: "/platformer-unreal.png",
     projectUrl: "https://youtu.be/c9igLw17ESw?si=ncYB8PEiIsSLCGWQ",
-    codeUrl: "https://github.com/adisagar2003/PlatformerUnrealC",
+    githubUrl: "https://github.com/adisagar2003/PlatformerUnrealC",
     technologies: ["Unreal Engine 5", "C++", "Blueprints", "3D Modeling", "Game Design", "Niagara VFX", "Animation Blueprints"],
     year: "2024"
   },
@@ -29,7 +29,7 @@ const gameProjects: GameProject[] = [
     description: "A retro-style horror game inspired by PS1 classics, featuring low-poly graphics and atmospheric gameplay. Built with Unity, implementing custom shaders and post-processing effects for authentic PS1 aesthetics.",
     imageUrl: "/ps1-horror.png",
     projectUrl: "https://www.youtube.com/watch?v=GZ6M1qrmO-4",
-    codeUrl: "https://github.com/adisagar2003/Ps1_Horror-Game",
+    githubUrl: "https://github.com/adisagar2003/Ps1_Horror-Game",
     technologies: ["Unity", "C#", "Blender", "ShaderLab", "Post Processing"],
     year: "2024"
   },
@@ -37,7 +37,7 @@ const gameProjects: GameProject[] = [
     title: "BounceGun",
     description: "A fun 3D parkour FPS game where players can bounce and shoot their way through levels. Features unique movement mechanics and fast-paced combat.",
     imageUrl: "/bouncegun.png",
-    projectUrl: "https://github.com/adisagar2003/BounceGun",
+    githubUrl: "https://github.com/adisagar2003/BounceGun",
     technologies: ["Unity", "C#", "3D Modeling", "Animation", "Command Pattern", "SOLID Principles"],
     year: "2024"
   },
@@ -45,7 +45,7 @@ const gameProjects: GameProject[] = [
     title: "Anomally",
     description: "A 2D hack and slash wave-based combat game. Features solid architecture principles and MVP pattern implementation for clean, maintainable code.",
     imageUrl: "/anomally.png",
-    projectUrl: "https://github.com/adisagar2003/Anomally",
+    githubUrl: "https://github.com/adisagar2003/Anomally",
     technologies: ["Unity", "C#", "SOLID Principles", "MVP Architecture", "Aseprite"],
     year: "2023"
   },
@@ -53,7 +53,7 @@ const gameProjects: GameProject[] = [
     title: "Rton",
     description: "A unique game project showcasing innovative gameplay mechanics and creative design solutions.",
     imageUrl: "/rton.png",
-    projectUrl: "https://github.com/adisagar2003/Rton",
+    githubUrl: "https://github.com/adisagar2003/Rton",
     technologies: ["Unity", "C#", "Game Design"],
     year: "2023"
   },
@@ -61,7 +61,7 @@ const gameProjects: GameProject[] = [
     title: "Chicken Runner",
     description: "An endless runner game featuring a chicken protagonist. Includes various obstacles, power-ups, and increasing difficulty.",
     imageUrl: "/chicken-runner.png",
-    projectUrl: "https://github.com/adisagar2003/ChickenRunner",
+    githubUrl: "https://github.com/adisagar2003/ChickenRunner",
     technologies: ["Unity", "C#", "2D Animation", "Game Design"],
     year: "2023"
   }
@@ -86,16 +86,9 @@ const GameProjects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {gameProjects.map((project) => (
-            <ProjectCard
+            <GameProjectCard
               key={project.title}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              projectUrl={project.projectUrl}
-              technologies={project.technologies}
-              year={project.year}
-              isGameProject={project.title === "Unreal Engine Platformer" || project.title === "PS1 Horror Game"}
-              codeUrl={project.codeUrl}
+              {...project}
             />
           ))}
         </div>

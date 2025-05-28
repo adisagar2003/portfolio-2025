@@ -13,7 +13,7 @@ export const webProjects: WebProject[] = [
     title: "Portfolio 2025",
     description: "A modern, interactive portfolio website featuring a 3D model that responds to user interaction. Built with React Three Fiber for immersive 3D graphics and Next.js for optimal performance. Includes smooth animations, responsive design, and a clean, professional layout.",
     imageUrl: "/portfolio.png",
-    projectUrl: "https://adisagar2003.github.io/portfolio-2025",
+    projectUrl: "https://portfolio-2025-de4g.vercel.app/",
     technologies: ["Next.js", "React Three Fiber", "Three.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     year: "2024",
     githubUrl: "https://github.com/adisagar2003/portfolio-2025"
@@ -25,7 +25,7 @@ export const webProjects: WebProject[] = [
     projectUrl: "https://charlottetown.netlify.app",
     technologies: ["Express.ts", "React.ts", "TypeScript", "Redux", "Prisma", "MapLibre", "PostgreSQL", "Fly.io"],
     year: "2024",
-    githubUrl: "https://github.com/adisagar2003/charlottetown"
+    githubUrl: "https://github.com/adisagar2003/discover-charlottetown"
   },
   {
     title: "Real-time Social Media Platform",
@@ -34,6 +34,6 @@ export const webProjects: WebProject[] = [
     projectUrl: "https://spectacular-faun-3e4d91.netlify.app",
     technologies: ["MongoDB", "Express", "React", "Node.js", "Socket.io", "Redux Toolkit", "JWT"],
     year: "2023",
-    githubUrl: "https://github.com/adisagar2003/social-media-app"
+    githubUrl: "https://github.com/adisagar2003/Vs-MERN-Social-media"
   }
 ]; 

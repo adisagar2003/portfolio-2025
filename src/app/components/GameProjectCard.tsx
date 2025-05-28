@@ -4,27 +4,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ProjectCardProps {
+interface GameProjectCardProps {
   title: string;
   description: string;
   imageUrl: string;
-  projectUrl: string;
+  projectUrl?: string;
   technologies: string[];
   year: string;
-  isGameProject?: boolean;
-  codeUrl?: string;
+  githubUrl: string;
 }
 
-export default function ProjectCard({ 
+export default function GameProjectCard({ 
   title, 
   description, 
   imageUrl, 
   projectUrl, 
   technologies, 
   year,
-  isGameProject = false,
-  codeUrl
-}: ProjectCardProps) {
+  githubUrl
+}: GameProjectCardProps) {
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -59,25 +57,23 @@ export default function ProjectCard({
         </div>
         
         <div className="flex gap-4">
-          <Link
+          {projectUrl != null && <Link
             href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent font-semibold text-white hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105 text-center overflow-hidden"
           >
-            <span className="relative z-10">
-              {isGameProject ? "Watch Gameplay" : "View Code"}
-            </span>
+            <span className="relative z-10">Watch Gameplay</span>
             <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </Link>
-          {codeUrl && (
+          </Link>}
+          {githubUrl && (
             <Link
-              href={codeUrl}
+              href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent font-semibold text-white hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105 text-center overflow-hidden"
             >
-              <span className="relative z-10">View Code</span>
+              <span className="relative z-10">GitHub Code</span>
               <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           )}
